@@ -40,6 +40,26 @@ $('#borrowSlider').on('input', function () {
     $(this).parents('.range').find('.progressBar').css('width', (value * (98 / loanCap)) + "%");
 });
 
+$(() => {
+    $('input[type="radio"]').on('change', function () {
+        if ($(this).is(':checked')) {
+            let checkedValue = $(this).val();
+            $('#form-tab-1').hide();
+            $('#form-tab-2').fadeIn();
+
+            $('#checkedValue').html(checkedValue);
+            $(`.unusedoption[data-src="${checkedValue}"]`).hide();
+            $('.loanSvg').hide();
+            $(`.loanSvg[data-src="${checkedValue}"]`).fadeIn();
+        }
+    });
+
+    $('#show-form-tab-1').on('click', function () {
+        $('#form-tab-2').hide();
+        $('#form-tab-1').fadeIn();
+    });
+});
+
 $('#banks-slider').slick({
     slidesToShow: 6,
     slidesToScroll: 6,

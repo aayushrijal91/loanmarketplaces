@@ -1,11 +1,15 @@
 header {
     form {
+        #form-tab-2 {
+            display: none;
+        }
+
         input[type="radio"] {
             display: none;
         }
 
         input[type="radio"]:checked+label {
-            background: #5DC1A9;
+            background: #c2bde5;
             color: #ffffff;
         }
 
@@ -13,7 +17,7 @@ header {
             width: 100%;
             height: 24px;
             position: relative;
-            background-color: #F0F0F7;
+            background-color: #E2E2FF;
             border-radius: 100px;
 
             .sliderThumb {
@@ -31,7 +35,7 @@ header {
             .progressBar {
                 position: absolute;
                 height: 100%;
-                background-color: #5DC1A9;
+                background-color: #9381FF;
                 border-radius: 100px;
                 z-index: 1;
             }
