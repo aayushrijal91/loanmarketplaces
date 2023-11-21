@@ -18,6 +18,11 @@
 	</div>
 </a>
 <script type="text/javascript" src="./assets/js/app.js?v=0.3"></script>
+
+<?php if ($application_page) : ?>
+	<script async src="https://tag.clearbitscripts.com/v1/pk_ddb38ae22b25239f16051287139d4d08/tags.js" referrerpolicy="strict-origin-when-cross-origin"></script>
+<?php endif; ?>
+
 </body>
 
 </html>
