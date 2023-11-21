@@ -20,7 +20,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token'])) {
 
         $loanType = $_POST['loanType'];
         $borrowAmount = $_POST['borrowAmount'];
+        $termyear = $_POST['termyear'];
+        $loanCategory = $_POST['loanCategory'];
         $propertyUse = $_POST['propertyUse'];
+        $fullname = $_POST['fullname'];
+        $phone_number = $_POST['phone_number'];
+        $email_address = $_POST['email_address'];
 
         $message = '<!DOCTYPE html>
                 <html>
@@ -45,12 +50,32 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token'])) {
                     </head>
                 <body><table><tbody>' .
             '<tr>' .
+            '<td>Full Name</td>' .
+            '<td><b>' . strip_tags($fullname) . '</b></td>' .
+            '</tr>' .
+            '<tr>' .
+            '<td>Phone Number</td>' .
+            '<td><b>' . strip_tags($phone_number) . '</b></td>' .
+            '</tr>' .
+            '<tr>' .
+            '<td>Email Address</td>' .
+            '<td><b>' . strip_tags($email_address) . '</b></td>' .
+            '</tr>' .
+            '<tr>' .
             '<td>Loan Type</td>' .
             '<td><b>' . strip_tags($loanType) . '</b></td>' .
             '</tr>' .
             '<tr>' .
             '<td>What is the loan balance?</td>' .
             '<td><b>' . strip_tags($borrowAmount) . '</b></td>' .
+            '</tr>' .
+            '<tr>' .
+            '<td>What is your preferred loan term?</td>' .
+            '<td><b>' . strip_tags($termyear) . '</b></td>' .
+            '</tr>' .
+            '<tr>' .
+            '<td>What is the category?</td>' .
+            '<td><b>' . strip_tags($loanCategory) . '</b></td>' .
             '</tr>' .
             '<tr>' .
             '<td>How will this property be used?</td>' .

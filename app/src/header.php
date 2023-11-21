@@ -8,7 +8,7 @@
 	<link rel="icon" href="./assets/images/favicon.png" type="image/png">
 	<title><?= $site ?></title>
 	<script>
-		var SITE_URL = <?= $SITE_URL ?>;
+		var SITE_URL = "<?= $SITE_URL ?>";
 	</script>
 
 	<?php if ($application_page) : ?>
