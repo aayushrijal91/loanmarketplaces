@@ -209,7 +209,7 @@ $(() => {
 
         updateLoacalStorage(arr[0], arr[1]);
 
-        window.location.href = SITE_URL + '/application.php';
+        window.location.href = SITE_URL + '/application';
     }
 
     $(".show-form-tab-4").on('click', function (e) {

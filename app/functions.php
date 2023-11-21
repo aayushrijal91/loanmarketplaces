@@ -2,11 +2,12 @@
 include __DIR__ . '/env.php';
 
 $site = "LoanMarketplaces";
-$SITE_URL = "http://localhost:3000/landing_pages/loanmarketplaces/app";
+// $SITE_URL = "http://localhost:3000/landing_pages/loanmarketplaces/app";
+$SITE_URL = "http://loanmarketplaces.com.au";
 $phone_number = "0432 406 340";
 $admin_email = 'arijal@aiims.com.au';
 $bcc_email = "";
-$no_reply_email = 'info@website.com.au';
+$no_reply_email = 'info@loanmarketplaces.com.au';
 $recaptcha_client_secret = $client_secret;
 $recaptcha_server_secret = $server_secret;
 
