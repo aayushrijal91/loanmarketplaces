@@ -1,6 +1,6 @@
 <?php
 include __DIR__ . '/functions.php';
-$application_page = "true";
+$application_page = true;
 include __DIR__ . '/src/header.php';
 include __DIR__ . '/src/nav.php';
 ?>
